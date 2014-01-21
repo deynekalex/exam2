@@ -16,4 +16,6 @@
     <string name="carnumber">Номер машины</string>
     <string name="phoneNumber">Номер телефона</string>
     <string name="time">Желаемое время</string>
+    <string name="speed">Скорость доставки </string>
+
 </resources>

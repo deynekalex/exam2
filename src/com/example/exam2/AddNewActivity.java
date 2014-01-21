@@ -29,11 +29,30 @@ public class AddNewActivity extends Activity {
     Button addNew;
     DatabaseHelper helper;
     Dao scheduleDao;
-
+    String[] data = {"00:30","01:00","01:30"};
+    int selectedSpeed = 0;
     @Override
     public void onCreate(Bundle s) {
         super.onCreate(s);
         setContentView(R.layout.add_new);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, data);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        spinner2.setAdapter(adapter);
+        spinner2.setPrompt("Скорость доставки");
+        spinner2.setSelection(0);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+                selectedSpeed = position;
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                selectedSpeed = 0;
+            }
+        });
+
         helper = DatabaseManager.getInstance().getHelper();
         try {
             scheduleDao = helper.getEntriesDao();
