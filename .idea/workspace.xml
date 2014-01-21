@@ -19,6 +19,7 @@
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-19" />
         <option name="theme" value="Theme" />
+        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
@@ -29,10 +30,12 @@
     <file path="/AndroidManifest.xml" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390303934438" ignored="false" />
     <file path="/ListActivity.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390304195595" ignored="false" />
     <file path="/DatabaseHelper.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390304435944" ignored="false" />
-    <file path="/AddNewActivity.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390306621857" ignored="false" />
+    <file path="/AddNewActivity.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390309963191" ignored="false" />
     <file path="/ScheduleEntry.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390304475351" ignored="false" />
-    <file path="/strings.xml" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390306153307" ignored="false" />
+    <file path="/strings.xml" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390306976581" ignored="false" />
     <file path="/add_new.xml" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390305675633" ignored="false" />
+    <file path="/list.xml" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390310498412" ignored="false" />
+    <file path="/StartActivity.java" changelist="5581d984-9680-4b20-a8e6-37cc1a7f2f78" time="1390311062075" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,47 +99,38 @@
       <file leaf-file-name="ListActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/exam2/ListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="40" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.0">
+            <state line="63" column="37" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DatabaseHelper.java">
+      <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="63" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
+            <state line="27" column="53" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddNewActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/AddNewActivity.java">
+      <file leaf-file-name="AddingNew.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/AddingNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="77" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.4405797">
+            <state line="118" column="71" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.5072464">
               <folding>
-                <element signature="e#927#935#0" expanded="true" />
-                <element signature="e#2441#3323#0" expanded="true" />
-                <element signature="e#3312#3313#0" expanded="true" />
+                <element signature="e#961#969#0" expanded="true" />
+                <element signature="e#2469#3821#0" expanded="true" />
+                <element signature="e#3810#3811#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScheduleEntry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/orm/ScheduleEntry.java">
+      <file leaf-file-name="Booking.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/orm/Booking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="45" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+            <state line="33" column="71" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,20 +138,20 @@
       </file>
       <file leaf-file-name="add_new.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/add_new.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="35" selection-start="3070" selection-end="3070" vertical-scroll-proportion="-4.0">
+          <provider editor-type-id="text-editor">
+            <state line="69" column="35" selection-start="3070" selection-end="3070" vertical-scroll-proportion="-46.92">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="General.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/General.java">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="1" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+            <state line="22" column="8" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,35 +159,50 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FirstActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/FirstActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="86" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1214#2133#0" expanded="true" />
+                <element signature="e#2118#2119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/entry.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/list.xml">
+      <file leaf-file-name="DB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.42">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="936" selection-end="936" vertical-scroll-proportion="-12.92">
-              <folding />
+            <state line="32" column="1" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,7 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/exam2/StartActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/General.java" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/DataBaseManager.java" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/DatabaseManager.java" />
@@ -216,9 +224,13 @@
         <option value="$PROJECT_DIR$/src/com/example/exam2/orm/ScheduleEntry.java" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/ListActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/add_new.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/example/exam2/AddNewActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/list.xml" />
+        <option value="$PROJECT_DIR$/res/layout/entry.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/exam2/StartActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/example/exam2/FirstActivity.java" />
       </list>
     </option>
   </component>
@@ -301,6 +313,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -352,7 +386,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/ormlite-core-4.47.jar!/" />
-    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -485,7 +519,7 @@
     </configuration>
     <configuration default="false" name="exam2" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="exam2" />
-      <option name="ACTIVITY_CLASS" value="com.example.exam2.StartActivity" />
+      <option name="ACTIVITY_CLASS" value="com.example.exam2.FirstActivity" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
@@ -519,14 +553,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1296" height="760" extended-state="1" />
+    <frame x="-8" y="0" width="1296" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.67164177" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.67164177" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.67164177" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -540,7 +574,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67164177" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -640,38 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/StartActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="1" selection-start="2254" selection-end="2254" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/orm/ScheduleEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="63" selection-start="964" selection-end="964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="45" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
@@ -679,29 +681,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/list.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.42">
+        <state line="32" column="1" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/ListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="37" selection-start="1924" selection-end="1924" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/entry.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/General.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+        <state line="22" column="8" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -710,45 +708,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="936" selection-end="936" vertical-scroll-proportion="-12.92">
+        <state line="18" column="55" selection-start="935" selection-end="935" vertical-scroll-proportion="-4.48">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/add_new.xml">
+      <provider editor-type-id="text-editor">
+        <state line="69" column="35" selection-start="3070" selection-end="3070" vertical-scroll-proportion="-46.92">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list.xml">
+      <provider editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/add_new.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="35" selection-start="3070" selection-end="3070" vertical-scroll-proportion="-4.0">
+    <entry file="file://$PROJECT_DIR$/res/layout/entry.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
+      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/ListActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/FirstActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="40" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/AddNewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="77" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.4405797">
+        <state line="36" column="86" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#927#935#0" expanded="true" />
-            <element signature="e#2441#3323#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1214#2133#0" expanded="true" />
+            <element signature="e#2118#2119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/orm/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="71" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="53" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/exam2/AddingNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="71" selection-start="4514" selection-end="4514" vertical-scroll-proportion="0.5072464">
+          <folding>
+            <element signature="e#961#969#0" expanded="true" />
+            <element signature="e#2469#3821#0" expanded="true" />
+            <element signature="e#3810#3811#0" expanded="true" />
           </folding>
         </state>
       </provider>

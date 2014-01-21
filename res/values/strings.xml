@@ -17,5 +17,9 @@
     <string name="phoneNumber">Номер телефона</string>
     <string name="time">Желаемое время</string>
     <string name="speed">Скорость доставки </string>
-
+    <string-array name="speedof">
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+    </string-array>
 </resources>

@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import com.example.exam2.orm.ScheduleEntry;
+import com.example.exam2.orm.Booking;
 import com.j256.ormlite.dao.Dao;
 
 
@@ -27,7 +27,7 @@ public class ListActivity extends Activity {
     ListView listView;
     Dao scheduleDao;
     Button addNew;
-    DatabaseHelper helper;
+    DBHelper helper;
     private List values;
 
     @Override
@@ -36,17 +36,17 @@ public class ListActivity extends Activity {
         setContentView(R.layout.list);
         inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         carWashName = (TextView) findViewById(R.id.textView);
-        carWashName.setText(General.REAL_NAME);
+        carWashName.setText(Main.REAL_NAME);
         listView = (ListView) findViewById(R.id.list);
-        helper = DatabaseManager.getInstance().getHelper();
+        helper = DB.getInstance().getHelper();
 
-        Log.i("numberofboxes", String.valueOf(General.NUMBER_OF_BOXES));
+        Log.i("numberofboxes", String.valueOf(Main.NUMBER_OF_BOXES));
         for (int i = 0; i < 28; i++) {
             ArrayList<Integer> boxes = new ArrayList<Integer>();
-            for (int j = 0; j < General.NUMBER_OF_BOXES; j++) {
+            for (int j = 0; j < Main.NUMBER_OF_BOXES; j++) {
                 boxes.add(j);
             }
-            General.freeTime.put(i, boxes);
+            Main.freeTime.put(i, boxes);
         }
 
         try {
@@ -60,10 +60,10 @@ public class ListActivity extends Activity {
             Log.e("error", "error", e);
         }
         for (Object entry : values) {
-            ScheduleEntry entry1 = (ScheduleEntry) entry;
-            General.freeTime.get(entry1.getScheduleTime()).remove((Integer) entry1.getBoxNumber());
-            if (General.freeTime.get(entry1.getScheduleTime()).size() == 0) {
-                General.freeTime.remove(entry1.getScheduleTime());
+            Booking entry1 = (Booking) entry;
+            Main.freeTime.get(entry1.getScheduleTime()).remove((Integer) entry1.getBoxNumber());
+            if (Main.freeTime.get(entry1.getScheduleTime()).size() == 0) {
+                Main.freeTime.remove(entry1.getScheduleTime());
             }
         }
         listView.setAdapter(new ScheduleEntryAdapter(this, android.R.layout.simple_list_item_1, values));
@@ -71,15 +71,15 @@ public class ListActivity extends Activity {
         addNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AddNewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AddingNew.class);
                 startActivity(intent);
             }
         });
     }
 
-    public class ScheduleEntryAdapter extends ArrayAdapter<ScheduleEntry> {
+    public class ScheduleEntryAdapter extends ArrayAdapter<Booking> {
 
-        public ScheduleEntryAdapter(Context context, int resource, List<ScheduleEntry> objects) {
+        public ScheduleEntryAdapter(Context context, int resource, List<Booking> objects) {
             super(context, resource, objects);
         }
 
@@ -90,7 +90,7 @@ public class ListActivity extends Activity {
 
         @Override
         public View getView(int pos, View convertView, ViewGroup parent) {
-            ScheduleEntry entry = getItem(pos);
+            Booking entry = getItem(pos);
 
             LinearLayout view = (LinearLayout) inflater.inflate(R.layout.entry, null);
             TextView brandName = (TextView) view.findViewById(R.id.textView);
@@ -99,7 +99,7 @@ public class ListActivity extends Activity {
             TextView boxNumber = (TextView) view.findViewById(R.id.textView3);
             brandName.setText(entry.getBrandName());
             color.setText(entry.getColor());
-            time.setText(General.formatTime(entry.getScheduleTime()));
+            time.setText(Main.formatTime(entry.getScheduleTime()));
             boxNumber.setText(String.valueOf(entry.getBoxNumber() + 1));
             return view;
         }
