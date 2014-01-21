@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Пиццерия</string>
+    <string name="carwash">пицца вкусная</string>
+    <string name="boxNumber">Количство курьеров</string>
+    <string name="carWashName">Название пиццерии</string>
+    <string name="first_message">Введите данные о пиццерии</string>
+    <string name="start">Начать работу</string>
+    <string name="fill_correct">Пожалуйста, заполните все поля</string>
+    <string name="three">3</string>
+    <string name="order_list">Список заказов</string>
+    <string name="add">Добавить заказ</string>
+    <string name="new_entry">Новый заказ</string>
+    <string name="brandname">название пиццы</string>
+    <string name="color">Цвет</string>
+    <string name="carnumber">Номер машины</string>
+    <string name="phoneNumber">Номер телефона</string>
+    <string name="time">Желаемое время</string>
+</resources>
